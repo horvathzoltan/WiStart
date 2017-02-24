@@ -27,7 +27,7 @@ public class WiDataController {
 
     @GetMapping("/widata")
     public ModelAndView wiDataForm() {
-        ModelAndView mav = new ModelAndView("widata", "command", new WiData());
+        ModelAndView mav = new ModelAndView("site.homepage", "command", new WiData());
         mav.addObject("selectList", new int[]{15, 30, 45, 60});
         Map<Integer, String> users = new LinkedHashMap<Integer, String>();
         users.put(1, "User1");
@@ -49,7 +49,7 @@ public class WiDataController {
         List<List<Object>> oneDayWiData = wiDataService.writeData(days, wiData.getDateInterest());
         wiData.setOneDayWiData(oneDayWiData);
         model.addAttribute("oneDayWiData", oneDayWiData);
-        return "result";
+        return "site.result";
     }
 
 }

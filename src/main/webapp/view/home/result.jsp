@@ -1,11 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<html>
-<head>
-    <title>Getting Started: Handling Form Submission</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
+
 <h1>Result</h1>
 
 <table>
@@ -30,7 +25,9 @@
 
 </table>
 <a href="/widata">Submit another query</a>
-<div id="curve_chart" style="width: 900px; height: 500px"></div>
+
+</div>
+<%--<div id="curve_chart" style="width: 900px; height: 500px"></div>--%>
 
 <%--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>--%>
 <%--<script type="text/javascript">--%>
@@ -61,5 +58,4 @@
 
 
 <%--</script>--%>
-</body>
-</html>
+
